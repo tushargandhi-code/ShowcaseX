@@ -4,7 +4,7 @@ ShowcaseX
 
 A responsive Product‑Showcase Web App built for the Front‑End Developer test assignment.  Browse, filter and sort 30 mock products, add them to a persistent (local‑storage) cart, and view details— all wrapped in a clean purple theme.
 
-Live demo: https://showcasex.vercel.app
+Live demo: https://showcase-x.vercel.app/
 
 ✨ Key Features
 
@@ -80,7 +80,7 @@ Lucide‑react icons
 🚀 Getting Started Locally
 
 # 1. Clone repo
-$ git clone https://github.com/your‑username/showcasex.git
+$ git clone https://github.com/tushargandhi-code/ShowcaseX
 $ cd showcasex
 
 # 2. Install deps
