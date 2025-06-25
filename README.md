@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ShowcaseX
 
-## Getting Started
+  
 
-First, run the development server:
+A responsive Product‑Showcase Web App built for the Front‑End Developer test assignment.  Browse, filter and sort 30 mock products, add them to a persistent (local‑storage) cart, and view details— all wrapped in a clean purple theme.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Live demo: https://showcasex.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛒 Cart Context
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Global state with qty counter & localStorage persistence
 
-## Learn More
+🖼 Product Grid
 
-To learn more about Next.js, take a look at the following resources:
+Filtering (category / price) • Sorting (price / rating / name) • Pagination (12 per page)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📄 Product Detail
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dynamic route /product/[slug] with image, price, stars & Add‑to‑Cart
 
-## Deploy on Vercel
+🎨 Theme
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tailwind utility classes, gradient backgrounds, glassy header
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 Static Pages
+
+/about & /contact (demo form)
+
+
+
+🛒 Cart Context
+
+Global state with qty counter & localStorage persistence
+
+🖼 Product Grid
+
+Filtering (category / price) • Sorting (price / rating / name) • Pagination (12 per page)
+
+📄 Product Detail
+
+Dynamic route /product/[slug] with image, price, stars & Add‑to‑Cart
+
+🎨 Theme
+
+Tailwind utility classes, gradient backgrounds, glassy header
+
+📄 Static Pages
+
+/about & /contact (demo form)
+
+🗂 Project Structure
+
+src/
+  ├─ app/
+  │    ├─ layout.tsx          # CartProvider + Header
+  │    ├─ page.tsx            # Home (Hero + Grid)
+  │    ├─ about/page.tsx
+  │    ├─ contact/page.tsx
+  │    └─ product/[slug]/page.tsx
+  ├─ components/              # UI pieces
+  ├─ context/CartContext.tsx  # Cart logic
+  ├─ data/products.json       # 30 demo items
+  ├─ hooks/usePagination.ts
+  └─ types/product.ts
+
+🛠 Tech Stack
+
+Next.js 13+ (App Router)
+
+React 18 hooks
+
+TypeScript strict mode
+
+Tailwind CSS
+
+Lucide‑react icons
+
+🚀 Getting Started Locally
+
+# 1. Clone repo
+$ git clone https://github.com/your‑username/showcasex.git
+$ cd showcasex
+
+# 2. Install deps
+$ npm install
+
+# 3. Run dev server
+$ npm run dev       # http://localhost:3000
+
+
+
+
+Built with 💜 by Tushar – June 2025
+
