@@ -59,7 +59,7 @@ export default function ProductCard({ p }: { p: Product }) {
       <button
   onClick={() => {
     add({ ...p, id: Number(p.id) })
-    console.log(typeof p.id, p.id);
+    alert("Item aaded in cart successfully");
 }}
   className="absolute bottom-0 left-0 w-full translate-y-full
              group-hover:translate-y-0 bg-purple-600 text-white py-2 text-sm"
